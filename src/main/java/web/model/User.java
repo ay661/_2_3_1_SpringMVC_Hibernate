@@ -19,18 +19,18 @@ public class User {
     @Column(name = "age")
     private int age;
 
-    @Column(name = "grade")
+    @Column(name = "email")
     private String email;
 
 
     public User() {
     }
 
-    public User(String name, String surname, int age, String grade) {
+    public User(String name, String surname, int age, String email) {
         this.name = name;
         this.surname = surname;
         this.age = age;
-        this.email = grade;
+        this.email = email;
     }
     @Id
     public Long getId() {
